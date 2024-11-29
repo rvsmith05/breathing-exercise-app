@@ -1,0 +1,72 @@
+body {
+    font-family: Georgia, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ffffff, #ffffff)
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 6rem;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    height: 50%;
+    width: 20%;
+}
+
+h1 {
+    color: #2c3e50;
+    margin: -1rem -1rem 1rem -1rem;
+    padding: 1rem;
+    font-size: 2rem;
+   
+}
+
+#breathing-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 2rem;
+    background-color: #3498db;
+    transition: transform 4s ease-in-out, background-color 4s ease-in-out;
+}
+
+#instruction {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #34495e;
+}
+
+#start-btn {
+    background-color: #308ce2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#start-btn:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+.breathe-in {
+    transform: scale(1.5);
+    background-color: #13489d !important; /* Vibrant orange for inhale */
+}
+
+.breathe-out {
+    transform: scale(1);
+    background-color: #3498db !important; /* Calming blue for exhale */
+}
